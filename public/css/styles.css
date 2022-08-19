@@ -1,0 +1,194 @@
+/* colores
+
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+*/
+
+* {
+  box-sizing: border-box;
+  color: rgb(10, 10, 10);
+  font-family: "Roboto", sans-serif;
+}
+/*    nav      */
+.logo {
+  height: 40%;
+  width: 40%;
+  padding: 20px;
+}
+
+.search-bar {
+  padding-left: 25px;
+  margin: 15px;
+}
+
+.buy-without-card {
+  padding-left: 25px;
+  text-align: center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-bar {
+  background-color: #eac926;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.user-nav {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* burger */
+
+.burger-menu {
+  text-align: center;
+}
+
+.fas {
+  margin: 20px;
+  color: white;
+  background-color: #0869cf;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* burger */
+
+.fa-truck {
+  margin: 0px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  color: #39b54a;
+  border-radius: 50%;
+  border: 1px solid #39b54a;
+}
+/*  */
+
+/*      main       */
+
+/*  */
+
+main {
+  background-color: #adadad;
+
+  /* width: 90vw; */
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  color: rgb(73, 73, 73);
+}
+.last-views-article,
+.offer-section {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 90%;
+  background-color: white;
+}
+
+.info-article {
+  padding: 15px;
+  border-top: 1px solid #b1b1b1;
+}
+.price {
+  font-size: 18px;
+}
+
+.offer {
+  color: #39b54a;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.description {
+  color: #666;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* .offer-section,
+.last-views-article div p.offer,
+p.price {
+  display-flex
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+.container-price-and-offer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container-price-and-offer p.price {
+  flex-grow: 0.3;
+}
+.container-price-and-offer p.offer {
+  flex-grow: 0.7;
+}
+
+/*  */
+
+/* footer */
+
+/*  */
+.footer {
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+}
+
+.footer-icon {
+  font-size: 2em;
+  color: #0869cf;
+  text-align: center;
+}
+
+.pay,
+.shipping,
+.security {
+  margin-bottom: 40px;
+}
+
+/* media queris */
+
+@media screen and (max-width: 400px) {
+  .description,
+  .navegation {
+    display: none;
+  }
+  .logo {
+    height: 50%;
+    width: 50%;
+  }
+  .fa-truck {
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .last-views-article,
+  .offer-section {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .logo {
+    height: 30%;
+    width: 30%;
+  }
+}
