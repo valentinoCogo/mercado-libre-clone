@@ -14,6 +14,7 @@ app.get("/home", (req, res) => {
   const root = path.join(__dirname + "/views/home.html");
   res.sendFile(root);
 });
+
 //
 //
 //
