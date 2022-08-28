@@ -15,6 +15,11 @@ app.get("/home", (req, res) => {
   res.sendFile(root);
 });
 
+app.get("/registro", (req, res) => {
+  const root = path.join(__dirname + "/views/registro.html");
+  res.sendFile(root);
+});
+
 //
 //
 //

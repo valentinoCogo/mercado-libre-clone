@@ -23,6 +23,7 @@ body {
 /*--------------------------------*/
 /*              HEADER            */
 /*                                */
+
 .main-header {
   background-color: var(--Color-Amarillo);
   font-size: 15px;
@@ -71,72 +72,19 @@ body {
 /*--------------------------------*/
 /*                                */
 /*              MAIN              */
+
 main {
   background-color: var(--Color-Gris-claro);
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-}
-
-section {
-  width: 100%;
-}
-img {
-  width: 100%;
+  width: 90vw;
 }
 
 a {
   text-decoration: none;
   color: rgb(41, 41, 41);
 }
-.last-views-article,
-.offer-section {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 15px;
-  background-color: rgb(255, 255, 255);
-}
-.titular {
-  font: size 24px;
-  color: var(--Color-Gris-oscuro);
-}
 
-.info-article {
-  background-color: rgb(255, 255, 255);
-  border-top: 2px solid #cccccc;
-  padding: 15px;
-}
-
-.fa-truck {
-  margin: 0px;
-  padding: 10px;
-  background-color: rgb(255, 255, 255);
-  color: #39b54a;
-  border-radius: 50%;
-  border: 1px solid #39b54a;
-}
-
-.container-truck {
-  justify-content: flex-end;
-  bottom: 35px;
-}
-
-.price {
-  font-size: 18px;
-}
-
-.offer,
-.description {
-  font-size: 16px;
-}
-
-.offer {
-  color: var(--Color-Verde);
-}
-
-.description {
-  color: var(--Color-Gris-oscuro);
-}
 /*                                */
 /*              MAIN              */
 /*--------------------------------*/
@@ -172,6 +120,7 @@ a {
 .security {
   margin-bottom: 40px;
 }
+
 /*                                */
 /*              FOOTER            */
 /*--------------------------------*/
@@ -184,21 +133,6 @@ a {
   display: flex;
 }
 .main-nav {
-  display: flex;
-}
-
-.container-truck {
-  display: flex;
-  position: relative;
-}
-
-.container-truck {
-  justify-content: flex-end;
-  bottom: 35px;
-}
-
-.last-views-container,
-.offer-section-container {
   display: flex;
 }
 
@@ -220,7 +154,6 @@ a {
   .logo-container {
     width: 50%;
   }
-
   .search-input,
   .logo-img {
     width: 100%;
@@ -228,7 +161,6 @@ a {
 
   .buy-without-credit-card {
     width: 90%;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -238,55 +170,135 @@ a {
     display: none;
   }
 
-  .fa-truck {
-    padding: 10px;
-  }
-  .container-truck {
-    justify-content: flex-end;
-    bottom: 35px;
-  }
-
   /*                     main                     */
 
-  .last-views-container,
-  .offer-section-container {
+  h1 {
+    color: var(--Color-Gris-oscuro);
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  h2 {
+    color: var(--Color-Gris-oscuro);
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    margin: 2.5px;
+  }
+
+  .user-profile-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .buyer-radios,
+  .seller-radio {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+  }
+
+  .item-container {
+    display: flex;
     flex-direction: column;
   }
+  .items {
+    width: 20%;
+    display: flex;
+    padding: 5px;
+  }
+  /* .title-user-profile {
+    flex-grow: 0.5;
+  }
+  .user-profile-radio {
+    flex-grow: 0.25;
+  } */
 }
 
 /* empieza tablet tablet min 361*/
 @media screen and (min-width: 400px) {
-  /*                         header                              */
+  /*              header                        */
+
+  h1 {
+    color: var(--Color-Gris-oscuro);
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  h2 {
+    color: var(--Color-Gris-oscuro);
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    margin: 2.5px;
+  }
+
+  .user-profile-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .buyer-radios,
+  .seller-radio {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+  }
+
+  .item-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .items {
+    width: 20%;
+    display: flex;
+    padding: 5px;
+  }
+
+  main {
+    width: 70%;
+  }
 
   .top-header-container {
     align-items: center;
     justify-content: center;
   }
 
-  .logo-container,
-  .search-bar,
-  .buy-without-credit-card {
-    width: 33%;
-  }
-
-  .top-header-text,
-  .search-input {
-    width: 100%;
-  }
-
-  .top-header-text {
-    font-size: 1.4vw;
-  }
-
   .main-nav {
-    /* width: 100%; */
+    width: 100%;
     flex-direction: row;
     justify-content: space-around;
   }
   .web-nav,
   .user-info-nav {
-    /* display: flex; */
-    justify-content: space-around;
+    display: flex;
+    /* flex-grow: 1;ç */
+  }
+
+  div a {
+    padding: 0px 2.5px;
+  }
+
+  .top-header-text {
+    flex-wrap: nowrap;
   }
 
   .burger-menu {
@@ -295,24 +307,12 @@ a {
 
   /*                        mian                        */
 
-  .last-views-container,
-  .offer-section-container {
-    width: 100%;
-    flex-grow: 0.5;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: row;
+  .main-title {
+    color: var(--Color-Gris-oscuro);
   }
 
-  .last-views-article,
-  .offer-section {
-    box-shadow: 0px 0px 10px rgb(82, 82, 82);
-    width: 40%;
-  }
-
-  .container-truck {
-    justify-content: flex-end;
-    bottom: 35px;
+  h2 {
+    color: var(--Color-Gris-oscuro);
   }
 }
 
@@ -325,10 +325,5 @@ a {
   .search-icon {
     right: 8%;
     bottom: -1px;
-  }
-
-  .last-views-article,
-  .offer-section {
-    width: 20%;
   }
 }
