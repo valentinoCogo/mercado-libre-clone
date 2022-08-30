@@ -30,7 +30,9 @@
 
             <div class="logo-container">
 
-                <img class="logo-img" src="/images/logo-mercado-liebre.svg" alt="logo de Mercado Liebre">
+                <a href="/home">
+                    <img class="logo-img" src="/images/logo-mercado-liebre.svg" alt="logo de Mercado Liebre">
+                </a>
 
             </div>
 
@@ -116,41 +118,84 @@
                     <div class="item">
 
 
-                        <!-- <label for="Nombre"></label> -->
                         <input type="text" name="nombre" id="Nombre" minlength="3" required placeholder="Nombre">
 
 
-                        <!-- <label for="Apellido">Apellido</label> -->
                         <input type="text" name="Apellido" id="Apellido" minlength="2" required placeholder="Apellido">
 
 
-                        <!-- <label for="Emial">Correo electronico</label> -->
                         <input type="email" name="correo-electronico" id="Emial" minlength="5" required
                             placeholder="Correo Electronico">
 
 
-                        <!-- <label for="nombre-usuario"">Nombre de usuario</label> -->
                         <input type="text" name="nombre-usuario" id="nombre-usuario" required
                             placeholder="Nombre de Usuario">
 
 
-                        <!-- <label for=" contraseña"">Contraseña</label> -->
                         <input type="password" name="contraseña" id="contraseña" required placeholder=" Contraseña">
 
 
-                        <!-- <label for="">Confirmar contraseña</label> -->
                         <input type="password" name="confirmar-contraseña" id="confirmar-contraseña" required
                             placeholder="Confirmar Contraseña">
 
 
                     </div class="item">
 
+                    <input type="list" list="provincias" placeholder="Provincia">
 
-                    <!-- <label for="ciudad">Ciudad</label> -->
+                    <datalist id="provincias">
+
+                        <option value="Buenos Aires"></option>
+
+                        <option value="Ciudad Autónoma de Buenos Aires"></option>
+
+                        <option value="Catamarca"></option>
+
+                        <option value="Chaco"></option>
+
+                        <option value="Chubut"></option>
+
+                        <option value="Córdoba"></option>
+
+                        <option value="Corrientes"></option>
+
+                        <option value="Entre Ríos"></option>
+
+                        <option value="Formosa"></option>
+
+                        <option value="Jujuy"></option>
+
+                        <option value="La Pampa"></option>
+
+                        <option value="La Rioja"></option>
+
+                        <option value="Mendoza"></option>
+
+                        <option value="Misiones"></option>
+
+                        <option value="Neuquén"></option>
+
+                        <option value="Río Negro"></option>
+
+                        <option value="Salta"></option>
+
+                        <option value="San Juan"></option>
+
+                        <option value="San Luis"></option>
+
+                        <option value="Santa Cruz"></option>
+
+                        <option value="Santa Fe"></option>
+
+                        <option value="Tierra del Fuego"></option>
+
+                        <option value="Tucumán"></option>
+
+                    </datalist>
+
                     <input type="text" name="ciudad" id="ciudad" minlength="2" required placeholder="Ciudad">
 
 
-                    <!-- <label for="domicilo">Domicilo</label> -->
                     <input type="text" name="domicilo" id="domicilo" minlength="2" required required
                         placeholder="Domicilo">
 
@@ -161,7 +206,6 @@
                         <input type="date" name="fecha-necimiento" id="fecha-necimiento" required>
 
 
-                        <!-- <label for="DNI">DNI</label> -->
                         <input type="number" name="DNI" id="DNI" minlength="8" required required placeholder="DNI">
 
 
