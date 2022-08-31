@@ -111,8 +111,12 @@ a {
 
 .footer-icon {
   font-size: 2em;
-  color: #0869cf;
+  color: #003063;
   text-align: center;
+  transition: color 200ms;
+}
+.footer-icon:hover {
+  color: rgb(4, 142, 255);
 }
 
 .pay,
@@ -216,12 +220,6 @@ a {
     display: flex;
     padding: 5px;
   }
-  /* .title-user-profile {
-    flex-grow: 0.5;
-  }
-  .user-profile-radio {
-    flex-grow: 0.25;
-  } */
 }
 
 /* empieza tablet tablet min 361*/
@@ -353,14 +351,18 @@ a {
     justify-content: center;
   }
 
+  .articles-footer-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
   /* main  */
 
   /* footer */
 
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  footer div article {
+    padding: 10px;
   }
 }
 
@@ -382,6 +384,12 @@ a {
   }
 }
 
+/* 
+
+
+
+
+*/
 /* empieza desktop */
 @media screen and (min-width: 800px) {
   .top-header-container {

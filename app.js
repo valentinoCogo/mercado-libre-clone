@@ -20,6 +20,11 @@ app.get("/registro", (req, res) => {
   res.sendFile(root);
 });
 
+app.get("/login", (req, res) => {
+  const root = path.join(__dirname + "/views/login.html");
+  res.sendFile(root);
+});
+
 //
 //
 //
