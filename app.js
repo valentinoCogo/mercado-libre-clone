@@ -6,7 +6,7 @@ const path = require("path");
 
 app.use(express.static("public"));
 
-app.listen(44, () => {
+app.listen(4400, () => {
   console.log("andanding");
 });
 
@@ -29,6 +29,6 @@ app.get("/login", (req, res) => {
 //
 //
 
-app.listen(process.env.PORT || 44, () => {
+app.listen(process.env.PORT || 4400, () => {
   console.log("andando en puerto 44");
 });
